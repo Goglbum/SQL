@@ -1,12 +1,10 @@
 package ru.netology.web.pages;
 
-import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.support.FindBy;
 import ru.alfabank.alfatest.cucumber.annotations.Name;
 import ru.alfabank.alfatest.cucumber.annotations.Optional;
 import ru.alfabank.alfatest.cucumber.api.AkitaPage;
-import ru.netology.web.data.DataHelper;
 
 
 @Name("Страница входа")
@@ -28,11 +26,4 @@ public class LoginPage extends AkitaPage {
   @FindBy(css = "[data-test-id=error-notification]")
   @Name("неверный логин или пароль")
   public SelenideElement error;
-
-  public VerificationPage validLogin(DataHelper.AuthInfo info) {
-    loginField.setValue(info.getLogin());
-    passwordField.setValue(info.getPassword());
-    loginButton.click();
-    return Selenide.page(VerificationPage.class);
-  }
 }

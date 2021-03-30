@@ -4,6 +4,8 @@ HELP.md
 .gradle
 build/
 
+db/
+
 ### STS ###
 .apt_generated
 .classpath
