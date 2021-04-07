@@ -1,6 +1,5 @@
 package ru.netology.web.pages;
 
-import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.support.FindBy;
 import ru.alfabank.alfatest.cucumber.annotations.Name;

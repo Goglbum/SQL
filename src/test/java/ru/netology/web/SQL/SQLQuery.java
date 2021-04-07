@@ -22,7 +22,6 @@ public class SQLQuery {
             try (val rs = userIdStmt.executeQuery()) {
                 if (rs.next()) {
                     resultUserId = rs.getString("id");
-//                    return resultUserId;
                 }
             }
             codeStmt.setString(1, resultUserId);

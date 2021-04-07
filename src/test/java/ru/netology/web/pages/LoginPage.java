@@ -26,4 +26,9 @@ public class LoginPage extends AkitaPage {
   @FindBy(css = "[data-test-id=error-notification]")
   @Name("неверный логин или пароль")
   public SelenideElement error;
+
+  @Optional
+  @FindBy(css = "[data-test-id=error-notification]")
+  @Name("пользователь заблокирован")
+  public SelenideElement errorUser;
 }

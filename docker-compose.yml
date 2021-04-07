@@ -15,15 +15,6 @@ services:
       MYSQL_DATABASE: app
       MYSQL_USER: app
       MYSQL_PASSWORD: pass
-#    command:
-#      - /bin/bash
-#      - -c
-#      - |
-#      - mysql -u app -p pass app -e "show tables" |
-#        grep -v Tables_in |
-#        grep -v "+" |
-#        gawk '{print "TRUNCATE TABLE `" $1 "`;"}' |
-#        mysql -u app -p pass app"
 
   adminer:
     image: adminer
